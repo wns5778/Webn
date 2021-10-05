@@ -4,18 +4,15 @@
   <title>한국전통음식을 소개합니다</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 
 <body>
   <h1><a href="index.html">한국의 전통음식</a></h1>
   <input type="button" value="night" onclick="
-  document.querySelector('body').style.backgroundColor = 'black';
-  document.querySelector('body').style.color = 'white';">
-
-  <input type="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor = 'white';
-  document.querySelector('body').style.color = 'black';">
-  <div id="grid">
+  nightDayHandler(this);
+  ">
   <ol>
     <li><a href="1.html">비빔밥</a></il>
     <li><a href="2.html">김치</a></il>
